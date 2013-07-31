@@ -1,0 +1,190 @@
+h1 {
+	color:#fff;
+	text-align: left;
+	margin-left: 300px;
+	margin-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+	margin: 0;
+}
+
+#selectContainer {
+	position: absolute;
+	background-color: #87421F;
+	border: 2px solid #fff;
+	border-right: 0;
+	border-top: 0;
+	width: 294px;
+	height: 40px;
+	top: 143px;
+	left:384px;
+	border-bottom-left-radius: 10px;
+}
+
+#userScoreContainer {
+	background-color: #87421F;
+	color: white;
+	border-radius:10px;
+	border: 2px solid #fff;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 20px;
+}
+
+#game-container {
+	background-color: #87421F;
+	color: white;
+	border-radius:10px;
+	border: 2px solid #fff;
+	width:375px;
+	text-align:center;
+	margin-left: 300px;
+	z-index:99;
+}
+
+div {
+	/*border:1px solid red;*/
+	margin: 5px;	
+}
+
+#userMoveRow {
+	border-bottom:#fff 2px solid;
+}
+
+#userMoveRow .selection {
+	border:2px solid #fff;
+}
+
+.selection, 
+.pastPicks {
+	display:inline-block;
+	margin-right: 5px;
+}
+
+.pastHints {
+	float: left;
+	width: 70px;
+	margin-top:0;
+}
+
+.moveRow {
+	border-bottom:#fff 1px solid;
+}
+
+.moveRow:last-child {
+	border-bottom:0;
+}
+
+.hide {
+	display:none;
+}
+
+
+#submitMove {
+	background-color: #fff;
+	color: #5E2612;
+	border:1px solid #5E2612;
+	border-radius: 5px;
+}
+
+#SubmitMoveContainer {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #87421F;
+	border:2px solid #fff;
+	border-left: 0;
+	position: absolute;
+	top: 95px;
+	left: 680px;
+	padding: 10px;
+}
+
+.selection {
+	height:25px;
+	width:50px;
+	border-radius:10px;
+	border:2px solid #fff;
+}
+
+#guessThisCombo .selection {
+	
+}
+	
+/*user color tabs*/	
+.black {background-color: black;}
+.red {background-color: red;}
+.yellow {background-color: yellow;}
+.white {background-color: white;}
+.green {background-color: green;}
+.blue {background-color: blue;}
+
+/*Hint color tabs*/	
+.correctHint {background-color: red;}
+.closeHint {background-color: white;}
+
+.hint {
+	height:10px; 
+	width: 20px;
+	border-radius:5px;
+	border:1px solid #fff;
+	float:left;
+	margin: 5px 5px 0 0;
+}
+
+.pcHints .hint {
+	border: 1px solid #87421F;
+}
+
+.hint.closeMatch {background-color:white;}
+.hint.exactMatch {background-color:black;}
+
+select {
+	position: relative;
+	top: 46px;
+	margin-left: -5px;
+}
+
+h5 {
+	margin: 0 0 .5em 0;
+}
+
+#nav {
+	margin-left: 300px;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#nav a {
+	color: #87421F;
+	font-size: 12px;
+	background-color: #fff;
+	margin-right: 20px;
+	border-radius: 3px;
+	padding:1px 5px;
+	text-decoration: none;
+}
+
+a#giveUp, a#startOver {
+	background-color: #87421F;
+	color: white;
+	border: 1px solid #fff;
+}
+
+a#giveUp {
+	margin-left: 40px;
+}
+
+
+
+body {
+	text-align:center;
+	background-image: url('../images/mastermind.jpg'); 
+	/**/background-color: #000;
+	
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+}
