@@ -7,7 +7,7 @@
 
 </head>
     
-<body>
+<body id="masterBody">
     
     <div id="nav">
     	<a id="rulesDisplay" href="#">Rules</a>
@@ -298,6 +298,18 @@
     
     
 </body>
+
+
+<script>
+	//Drop Kick users with unsupportive browsers outta here!
+	(function() {
+		if (typeof document.createElement == 'object') {
+			alert("Sorry your browser doesn't support Mastermind, please use Chrome or Firefox to play.");
+			var bodyz = document.getElementById('masterBody');
+			bodyz.style.display = "none";
+		}
+	}());
+</script>
 	
 	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="js/messageInteractions.js"></script>
