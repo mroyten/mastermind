@@ -9,10 +9,9 @@ MASTER.features = {
 		var submitMoveContainer = MASTER.doc.getElementById('SubmitMoveContainer'),
 		 	containerStyles = MASTER.globalName.getComputedStyle(submitMoveContainer),
 			containerStyleTop = containerStyles.getPropertyValue('top'),	
-			removePx = containerStyleTop.length - 2,
-			rawTopValue = containerStyleTop.substring(0, removePx);
+			fromTheTop = parseInt(containerStyleTop);
 			
-		submitMoveContainer.style.top = (parseInt(rawTopValue) + 50) + "px";
+		submitMoveContainer.style.top = (fromTheTop + 50) + "px";
 	},
 	
 	//slide the submit Move Button down along with the new move to make
@@ -20,10 +19,9 @@ MASTER.features = {
 		var selectListsContainer = MASTER.doc.getElementById('selectContainer'),
 		 	listStyles = MASTER.globalName.getComputedStyle(selectListsContainer),
 			listStyleTop = listStyles.getPropertyValue('top'),	
-			removePx = listStyleTop.length - 2,
-			rawTopValue = listStyleTop.substring(0, removePx);
+			fromTheTop = parseInt(listStyleTop);
 			
-		selectListsContainer.style.top = (parseInt(rawTopValue) + 50) + "px";
+		selectListsContainer.style.top = (fromTheTop + 50) + "px";
 	},
 	
 	//deactiveate submit move button upon winning the game.
@@ -64,7 +62,6 @@ MASTER.features = {
 	}
 
 };
-
 
 //intialize counter
 MASTER.features.mycounter = MASTER.features.counter(0);
